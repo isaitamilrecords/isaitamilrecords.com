@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Isai Tamil Records | An Indian Independent Record Label</title>
+
+    <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style4.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="mainNavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="icon" src="images/Light.png" /></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="music.html">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: rgb(212, 32, 1);">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Content-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-12 col-lg-10">
+                <h1 class="heading">Contact Us</h1>
+                <hr class="headingline"/>
+                <center class="p-4">
+                <span class="detail maildetail"><a href="mailto:isaitamilrecords@gmail.com" id="automail" target="_blank"><i id="cmail" class="fas fa-at"></i>isaitamilrecords@gmail.com</a></span>
+                <div class="contacttext">Send us a mail. Our team will contact you within 24 hours!</div>
+                
+                <span class="detail phonedetail"><a href="tel:+918270514004" id="autophone" "><i id="cphone" class="fas fa-phone-alt"></i>+91 82705 14004</a></span>
+                <div class="contacttext">Give us a phone call. We'll respond within minutes!</div>
+                
+                <span class="detail whatsappdetail"><i id="cwhatsapp" class="fab fa-whatsapp"></i>+91 82705 14004</span>
+                <div class="contacttext">Text us in WhatsApp. We'll reach out to you immediately</div>
+
+                <span class="detail">
+                    <a href="https://www.facebook.com/isaitamilrecords/"><span id="cfacebook" class="fa fa-facebook-square"></span></a>
+                    <a href="https://twitter.com/IsaiTamilRecord"><span id="ctwitter" class="fa fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/isai_tamil_records/"><span id="cinstagram" class="fab fa-instagram-square"></span></a>
+                    <a href="https://www.youtube.com/channel/UCsp_d41C18xQVtA6CWsOI8w"><span id="cyoutube" class="fa fa-youtube"></span></a>
+                    <a href="https://t.me/IsaiTamilRecords"><span id="ctelegram" href="https://t.me/IsaiTamilRecords" class="fa fa-telegram"></span></a>
+                </span>
+                <div class="contacttext">Follow and Support us on social media</div>
+                <hr class="division"/>
+                <div class="contacttext">Website designed by <a class="credits" href="https://www.instagram.com/frds_call_me_ak/"><span class="fab fa-instagram"><span id="insta"> &sol; frds_call_me_ak</span></span></a></div>
+                </center>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+    <!--Bootstrap JS and jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

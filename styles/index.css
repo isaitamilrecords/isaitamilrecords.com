@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+#jumbologo{
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0)); 
+    width : 100%;
+    padding-top: auto;
+}
+
+#jumbotext{
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0)); 
+    font-family: 'Biryani', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#jumbotextsm{
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0)); 
+    font-family: 'Biryani', sans-serif;
+    font-size: 10vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#jumbosubtext{
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0)); 
+    font-family: 'Biryani', sans-serif;
+    font-size: 2vw;
+    color: rgba(255, 255, 255, 0.747)
+}
+#jumbosubtextsm{
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0)); 
+    font-family: 'Biryani', sans-serif;
+    font-size: 4vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.815);
+    padding-top: 1.5vh;;
+}
+#jumbo{
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.tick{
+    color: green;
+}
+.img-thumbnail{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 80%;
+    object-fit: cover;
+    border : none;
+    display:block;
+}
+.card{
+    height: 100%;
+}
+.cardh{
+    height: 20vh;
+    object-fit: cover;
+    align-items: center;
+    display: block;
+    border: none;
+    margin: 10px;
+    vertical-align: middle;
+}
+.cardhsm{
+    height: 12vh;
+    object-fit: cover;
+    align-items: center;
+    display: block;
+    border: none;
+    margin: 10px;
+    vertical-align: middle;
+}
+.cardh:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardhsm:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.title1{
+    font-family: 'Biryani', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.7vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+}
+
+.title{
+    font-family: 'Biryani', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.7vh;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+
+.features{
+    vertical-align: middle;
+}
+
+.features{
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;    
+    font-weight: 700;
+    font-size: 3.8vh;
+    font-family: 'Jaldi', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    height : 40vh;
+}
+
+.hrline{
+    width: 40%;
+    height : 2px;
+    background-color: rgb(202, 32, 32);
+    margin-top : 5vh;
+}
+
+.fheight{
+    height: 2vh;
+}
+
+.ftext{
+    font-size: 2.5vh;
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 100;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-transform: none;
+    margin-bottom: 8vh;
+}
+
+.fheight:hover + .hrline {
+    animation-name: underline;
+    animation-duration: .25s;
+    width: 60%;
+}
+
+@keyframes underline{
+    0% {width: 40%;
+        height : 2px;
+        background-color: rgb(202, 32, 32);}
+
+    100%{width: 60%;
+        }
+}
+
+.features:hover{
+    animation-name: resize;
+    animation-duration: .5s;
+    font-size: 4vh;
+}
+
+@keyframes resize{
+    0%{font-size: 3.8vh;}
+    100%{font-size: 4vh;}
+}
+
+.features{
+    margin-bottom: -50px;;
+}
+
+h-100{
+    height : 52vh ;
+}
+
+.titleline{
+    margin-bottom : 5%;
+    height: 2px;
+    background-color: rgba(0, 0, 131, 0.582);
+    width : 20%   
+}
+
+.title:hover + .titleline{
+    animation-name: titlelineresize;
+    animation-duration: 0.25s;
+    width : 20%;
+    width : 22%;
+}
+.title:hover{
+    animation-name: titleresize;
+    animation-duration: 0.25s;
+    font-size: 3.7vh;
+    font-size: 4vh;
+}
+.title1:hover + .titleline{
+    animation-name: titlelineresize;
+    animation-duration: 0.25s;
+    width : 20%;
+    width : 22%;
+}
+.title1:hover{
+    animation-name: titleresize;
+    animation-duration: 0.25s;
+    font-size: 3.7vh;
+    font-size: 4vh;
+}
+@keyframes titlelineresize{
+    0%{width : 20%;}
+    100%{width : 22%;}
+}
+@keyframes titleresize{
+    0%{font-size: 3.7vh;}
+    100%{font-size: 4vh;}
+}

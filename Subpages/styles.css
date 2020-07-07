@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@600&display=swap');
+
+.text{
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    text-indent: 35px;
+}
+
+.textsm{
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    text-indent: 35px;
+}
+
+#mainlogo{
+    width : 40%;
+    padding: 5vw;
+}
+
+#mainlogosm{
+    width : 70%;
+    padding: 5vw;
+}
+
+#backbutton{
+    color: rgb(0, 92, 197);
+    border: none;
+    padding: 10px;
+    font-size: 2.5vh;
+    font-family: 'Biryani', sans-serif;
+    font-weight: 400;
+}
+#backbuttonsm{
+    color: rgb(0, 92, 197);
+    border: none;
+    padding: 10px;
+    font-size: 2vh;
+    font-family: 'Biryani', sans-serif;
+    font-weight: 400;
+}
+.backlink:hover{
+    text-decoration: none;
+}
+

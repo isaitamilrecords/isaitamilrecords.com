@@ -1,0 +1,22 @@
+User Agent: *
+Disallow: /music.html
+Disallow: /aboutus.html
+Disallow: /contact.html
+Disallow: /Subpages/AmazonMusic.html
+Disallow: /Subpages/AndMore.html
+Disallow: /Subpages/AppleMusic.html
+Disallow: /Subpages/Deezer.html
+Disallow: /Subpages/Facebook.html
+Disallow: /Subpages/Gaana.html
+Disallow: /Subpages/GooglePlayMusic.html
+Disallow: /Subpages/Hungama.html
+Disallow: /Subpages/JioSaavn.html
+Disallow: /Subpages/Napster.html
+Disallow: /Subpages/Resso.html
+Disallow: /Subpages/Shazam.html
+Disallow: /Subpages/SoundCloud.html
+Disallow: /Subpages/Spotify.html
+Disallow: /Subpages/styles.css
+Disallow: /Subpages/TikTok.html
+Disallow: /Subpages/WyncMusic.html
+Disallow: /Subpages/YoutubeMusic.html

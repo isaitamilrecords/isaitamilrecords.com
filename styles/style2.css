@@ -5,7 +5,7 @@
 .heading{
     font-family: 'Biryani', sans-serif;
     text-transform: uppercase;
-    font-size: 4.5vh;
+    font-size: 37px;
     text-align: center;
     padding-top: 3vh;
     padding-bottom: 1vh;
@@ -26,16 +26,15 @@
 .heading:hover{
     animation-name: headingresize;
     animation-duration: 0.25s;
-    font-size: 3.7vh;
-    font-size: 4.7vh;
+    font-size: 42px;
 }
 @keyframes headinglineresize{
     0%{width : 20%;}
     100%{width : 22%;}
 }
 @keyframes headingresize{
-    0%{font-size: 4.5vh;}
-    100%{font-size: 4.7vh;}
+    0%{font-size: 37px;}
+    100%{font-size: 42px;}
 }
 
 .member{
@@ -49,27 +48,30 @@
 }
 
 .teamimg{
+    max-width : 500px;
     width : 100%;
     padding: 3vh;
+    border-radius: 10%;
 }
 
 .name{
-    font-size: 5vh;
+    font-size: 35px;
     font-weight: 500;
 }
 .designation{
-    font-size: 3vh;
+    font-size: 25px;
     font-weight: 400;
     color: rgb(182, 0, 0);
 }
 .teamtext{
     font-family: 'Noto Sans', sans-serif;
-    font-size: 2.5vh;
+    font-size: 20px;
 }
+
 
 .smlinks{
     font-family: 'Noto Sans', sans-serif;
-    font-size: 2.5vh;
+    font-size: 35px;
     padding-right: 15px;    
     margin-top : 3vh;
 }
@@ -80,31 +82,27 @@
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4vh;
 }
 
 .smfacebook {
     color : #3b5998;
-    font-size: 4vh;
 }
 .smtwitter {
     color : #00acee;
-    font-size: 4vh;
 }
 .smyoutube {
     color : #dd0700;
-    font-size: 4vh;
   }
 .fab1{
-    font-size: 2vw;
+    font-size: 35px;
 }
 .fab2{
-    font-size: 7.5vw;
+    font-size: 35px;
 }
 
 .FAQqn1{
     font-family: 'Noto Sans', sans-serif;
-    font-size: 3.5vh;
+    font-size: 25px;
     color: #d32a00;
     font-weight: 700;
     margin-bottom: 2vh;
@@ -113,7 +111,7 @@
 .FAQqn{
     padding-top: 40px;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 3.5vh;
+    font-size: 25px;
     color: #d32a00;
     font-weight: 700;
     margin-bottom: 2vh;
@@ -123,7 +121,7 @@
     text-indent: 60px;
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
-    font-size: 2.5vh;
+    font-size: 20px;
     padding-left: 3vw;
     padding-right:3vw;
 }

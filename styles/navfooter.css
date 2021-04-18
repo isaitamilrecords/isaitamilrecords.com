@@ -124,7 +124,7 @@ body {
     font-size: 24px;
 }
 
-#telegram {
+#dailymotion {
     color: #0088cc;
     font-size: 24px;
 }
@@ -149,20 +149,20 @@ body {
     font-size: 25px;
 }
 
-#telegram-btn {
+#dailymotion-btn {
     font-size: medium;
 }
 
-#telegram-text {
+#dailymotion-text {
     font-size: small;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#telegram-ico {
+#dailymotion-ico {
     font-size: medium;
 }
 
-#telegram-btn {
+#dailymotion-btn {
     border: none;
     padding: 5px;
     background-color: whitesmoke;
@@ -189,7 +189,7 @@ body {
     color: #dd0700;
 }
 
-#telegram-btn:hover {
+#dailymotion-btn:hover {
     background-color: white;
     text-decoration: none;
 }

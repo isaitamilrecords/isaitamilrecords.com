@@ -40,7 +40,7 @@ function showAmazon() {
     });
 }
 
-function showGoogle() {
+function showInstagram() {
     $("#googlefloat").fadeIn('fast', function() {
         $("#googlefloat .servicebox").slideDown('fast');
         $("#googlefloat").css('display', 'flex');

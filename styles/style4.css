@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/*NavBar*/
+
+.icon {
+    height: 40px;
+}
+
+.navbar-toggler-icon {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+.navbar {
+    background: #fafafa;
+    transition: background 500ms;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.116);
+    margin-bottom: 0px;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    border-bottom: solid 2px;
+    overflow: hidden;
+    border-color: #d4210100;
+    transition: color 200ms;
+    transition: border-color 200ms;
+}
+
+.nav-link:hover {
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: solid 2px #d42001;
+    overflow: hidden;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(4, 85, 190);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(212, 32, 1);
+}
+
+.nav-item {
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    margin-top: 100px;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-align: justify;
+}
+
+.demo {
+    margin: 0 auto;
+    padding-top: 64px;
+    max-width: 640px;
+    width: 94%;
+}
+
+.demo h1 {
+    margin-top: 0;
+}
+
+
+/*Other*/
+
+.heading {
+    font-family: 'Biryani', sans-serif;
+    text-transform: uppercase;
+    font-size: 37px;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+
+.headingline {
+    margin-bottom: 5%;
+    height: 2px;
+    background-color: rgba(0, 0, 131, 0.582);
+    width: 20%
+}
+
+.heading:hover+.headingline {
+    animation-name: headinglineresize;
+    animation-duration: 0.25s;
+    width: 20%;
+    width: 22%;
+}
+
+.heading:hover {
+    animation-name: headingresize;
+    animation-duration: 0.25s;
+    font-size: 42px;
+}
+
+@keyframes headinglineresize {
+    0% {
+        width: 20%;
+    }
+    100% {
+        width: 22%;
+    }
+}
+
+@keyframes headingresize {
+    0% {
+        font-size: 37px;
+    }
+    100% {
+        font-size: 42px;
+    }
+}
+
+#cinstagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+#cfacebook {
+    color: #3b5998;
+    font-size: 30px;
+}
+
+#ctwitter {
+    color: #00acee;
+    font-size: 30px;
+}
+
+#cyoutube {
+    color: #dd0700;
+    font-size: 30px;
+}
+
+#ctelegram {
+    color: #0088cc;
+    font-size: 30px;
+}
+
+#cmail {
+    padding-right: 7px;
+}
+
+#cphone {
+    padding-right: 5px;
+}
+
+#cwhatsapp {
+    padding-right: 5px;
+}
+
+.detail {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.maildetail {
+    color: #0685ce;
+}
+
+.phonedetail {
+    color: #00830b;
+}
+
+.whatsappdetail {
+    color: #00830b;
+}
+
+.contacttext {
+    padding: 20px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.fa,
+.fab {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#automail:hover {
+    text-decoration: none;
+    color: #0685ce;
+}
+
+#automail {
+    text-decoration: none;
+    color: #0685ce;
+}
+
+#autophone:hover {
+    text-decoration: none;
+    color: #00830b;
+}
+
+#autophone {
+    text-decoration: none;
+    color: #00830b;
+}
+
+#autowhatsapp:hover {
+    text-decoration: none;
+    color: #00830b;
+}
+
+#autowhatsapp {
+    text-decoration: none;
+    color: #00830b;
+}
+
+.credits:hover {
+    text-decoration: none;
+}
+
+#insta {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: #0684ce;
+}
+
+.division {
+    background-color: #0000005e;
+    width: 50%;
+}
+
+.buttondetail {
+    white-space: nowrap;
+    font-weight: 600;
+}

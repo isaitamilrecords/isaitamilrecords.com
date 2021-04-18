@@ -1,0 +1,5 @@
+User Agent: *
+Disallow: /music.html
+Disallow: /aboutus.html
+Disallow: /contact.html
+

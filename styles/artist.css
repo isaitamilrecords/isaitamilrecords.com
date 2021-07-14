@@ -28,6 +28,15 @@
     margin: 2vh auto;
 }
 
+.art-head-line {
+    background-color: #d32a00;
+    width: 150px;
+    height: .25vh;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+
+}
+
 .artist-abt p {
     text-align: center;
     font-family: 'Biryani', sans-serif;
@@ -67,6 +76,7 @@
 }
 
 
+
 @media only screen and (max-width: 768px) {
 
     .artist-head {
@@ -84,10 +94,11 @@
         font-size: 1rem;
     }
 
-    .artist-abt hr {
+    .art-head-line {
         background-color: #d32a00;
-        width: 150px;
+        width: 140px;
         height: .25vh;
+        margin-top: 0;
     }
 
     .artist-img {

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@600&display=swap');
+
+::selection {
+    color: #ffffff;
+    background-color: #d43b15;
+    text-shadow: #33322f;
+}
+
+.artist-head {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.artist-abt {
+    text-align: center;
+}
+
+.art-topics {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: #d32a00;
+    font-weight: 700;
+    margin: 2vh auto;
+}
+
+.artist-abt p {
+    text-align: center;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.3rem;
+}
+
+.artist-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.platforms-list {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-btn {
+    width: 180px;
+    height: 65px;
+    padding: 5px;
+    margin: 2% 3%;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.platform-btn img {
+    width: 120;
+}
+
+.platform-btn:hover {
+    background-color: #e6e6e6;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .artist-head {
+        font-size: 2.1rem;
+        font-weight: 700;
+    }
+
+    .art-topics {
+        font-size: 25px;
+    }
+
+    .artist-abt p {
+        text-align: center;
+        font-family: 'Biryani', sans-serif;
+        font-size: 1rem;
+    }
+
+    .artist-abt hr {
+        background-color: #d32a00;
+        width: 150px;
+        height: .25vh;
+    }
+
+    .artist-img {
+        width: 250px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .platforms-list {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .platform-btn img {
+        width: 100px;
+    }
+
+    .platform-btn {
+        width: 120px;
+        height: 50px;
+        padding: 5px;
+        margin: 3% 4%;
+        border-radius: 13px;
+    }
+}

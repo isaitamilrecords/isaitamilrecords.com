@@ -2,7 +2,11 @@
 .icon {
     height: 40px;
 }
-
+::selection{
+    color:#ffffff;
+    background-color: #d43b15;
+    text-shadow: #33322f;
+}
 @media( max-width: 100%) {
     #Heading {
         font-size: 24px;

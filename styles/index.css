@@ -1,6 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;650;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+::selection{
+    color:#ffffff;
+    background-color: #d43b15;
+    text-shadow: #33322f;
+}
+/*******   Scrollbar   *******/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(83, 83, 83, 0.5);
+    border-radius: 10px;
+    opacity: 60%;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(77, 77, 77, 0.76);
+  }
+  
+
 #jumbologo {
     filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
     width: 100%;
@@ -11,7 +42,7 @@
     font-family: 'Biryani', sans-serif;
     font-size: 60px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 #jumbotextsm {
@@ -19,14 +50,14 @@
     font-family: 'Biryani', sans-serif;
     font-size: 40px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 #jumbosubtext {
     filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
     font-family: 'Biryani', sans-serif;
     font-size: 25px;
-    color: rgba(255, 255, 255, 0.747)
+    color: #ffffffbe
 }
 
 .jumbosubtextsm {
@@ -34,7 +65,7 @@
     font-family: 'Biryani', sans-serif;
     font-size: 20px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.815);
+    color: #ffffffd0;
     padding-top: 1.5vh;
 }
 
@@ -249,7 +280,7 @@
     0% {
         width: 40%;
         height: 2px;
-        background-color: rgb(202, 32, 32);
+        background-color: #ca2020;
     }
     100% {
         width: 45%;
@@ -273,10 +304,9 @@
 
 .features {
     margin-bottom: -50px;
-    ;
 }
 
-h-100 {
+.h-100 {
     height: 20px;
 }
 

@@ -2,7 +2,11 @@
 .icon {
     height: 40px;
 }
-
+::selection{
+    color:#ffffff;
+    background-color: #d43b15;
+    text-shadow: #33322f;
+}
 .navbar-toggler-icon {
     height: 30px;
     width: 30px;

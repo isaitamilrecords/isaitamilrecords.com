@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@600&display=swap');
+
+::selection{
+    color:#ffffff;
+    background-color: #d43b15;
+    text-shadow: #33322f;
+}
+
+.videos {
+    overflow: hidden;
+    position: relative;
+    margin: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid-col {
+    padding: 0 2%;
+    height: 260px;
+    margin: auto;
+}
+
+.video-api {
+    border: none;
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+.video-text {
+    padding: 8% 5%;
+}
+
+.vid-title {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    text-align: center;
+    font-size: 3rem;
+    color: #d42001;;
+}
+
+.vid-abt {
+    margin: auto 2%;
+    text-align: center;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+@media only screen and (max-width: 780px) {
+
+    .videos {
+        margin: 2%;
+    }
+
+    .vid-col {
+        padding: 0;
+        width: 270px;
+        height: 150px;
+    }
+
+    .video-api {
+        border: none;
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+
+    .video-text {
+        padding: 7% 4%;
+    }
+
+    .vid-title {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .vid-abt {
+        margin: auto 2%;
+        text-align: center;
+        font-family: 'Biryani', sans-serif;
+        font-size: 1rem;
+    }
+
+}

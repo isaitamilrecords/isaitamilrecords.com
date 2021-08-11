@@ -31,6 +31,35 @@
     background-color: rgba(77, 77, 77, 0.76);
   }
   
+.new-release{
+    margin: 5% 3% 0 3%;
+    overflow: hidden;
+}
+
+.videos {
+    overflow: hidden;
+    position: relative;
+    margin: 3% 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid-col {
+    padding: 0;
+    height: 300px;
+    margin: 3% 0 2%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.video-api {
+    border: none;
+    position: relative;
+    margin:0 2.5%;
+    width: 95%;
+    height: 300px;
+    border-radius: 10px;
+}
 
 #jumbologo {
     filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
@@ -318,7 +347,7 @@
     object-position: center;
     border-radius: 25px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
 #messageimg {
     background-color: #d4ecf8;
     min-height: 300px;
@@ -330,7 +359,79 @@
     border-radius: 25px;
     justify-content: center;
 }
+
+.new-release{
+    margin: 5% 1%;
+    overflow: hidden;
 }
+
+.videos {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 5% 1% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid-col {
+    padding: 0;
+    height: 300px;
+    margin: 3% 0 1%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-api {
+    border: none;
+    position: relative;
+    /* margin:0 10%; */
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media only screen and (max-width: 368px) {
+    
+    .new-release{
+        margin: 5% 1%;
+        overflow: hidden;
+    }
+    
+    .videos {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        margin: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vid-col {
+        padding: 0;
+        height: 180px;
+        margin: 3% 1;
+        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .video-api {
+        border: none;
+        position: relative;
+        /* margin:0 1.8%; */
+        width: 95%;
+        height: 180px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    }
 
 #mmessage {
     height: 100px;

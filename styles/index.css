@@ -347,7 +347,7 @@
     object-position: center;
     border-radius: 25px;
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 768px) {
 #messageimg {
     background-color: #d4ecf8;
     min-height: 300px;
@@ -389,7 +389,7 @@
     position: relative;
     /* margin:0 10%; */
     width: 90%;
-    height: 300px;
+    height: 215px;
     border-radius: 10px;
     justify-content: center;
     align-items: center;

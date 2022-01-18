@@ -153,13 +153,13 @@
 
 .card .listen{
     padding : 5px;
+    border-radius: 15px;
 }
 
 
 #miniplayer{
 
     background-color : #ffffff;
- 
     position: sticky;
     bottom: 20px;
     left : 0;

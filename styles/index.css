@@ -707,14 +707,11 @@
 }
 
 .textsm {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 20px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.textsm ul li {
-    margin-left: 5px;
-}
 
 .wikipediasm {
     display: flex;

@@ -4,35 +4,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 /*NavBar*/
-::selection{
-    color:#ffffff;
+::selection {
+    color: #ffffff;
     background-color: #d43b15;
     text-shadow: #33322f;
 }
+
 /*******   Scrollbar   *******/
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: rgba(83, 83, 83, 0.5);
     border-radius: 10px;
     opacity: 60%;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background-color: rgba(77, 77, 77, 0.76);
-  }
-  
+}
+
 .icon {
     height: 50px;
 }
@@ -141,6 +142,7 @@ body {
     0% {
         width: 20%;
     }
+
     100% {
         width: 22%;
     }
@@ -150,6 +152,7 @@ body {
     0% {
         font-size: 37px;
     }
+
     100% {
         font-size: 42px;
     }
@@ -275,4 +278,13 @@ body {
 .buttondetail {
     white-space: nowrap;
     font-weight: 600;
+}
+
+iframe {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 990px;
+    width: 100%;
 }

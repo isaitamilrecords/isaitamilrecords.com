@@ -442,7 +442,7 @@
         margin: 5% 1%;
         overflow: hidden;
     }
-    
+
     .videos {
         display: flex;
         overflow: hidden;
@@ -539,7 +539,7 @@
 }
 
 #msgform {
-    padding: 20px;
+    padding:0;
 }
 
 #lastcontainer {
@@ -729,10 +729,23 @@
 }
 
 .iframe {
-    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 990px;
-    width: 100%;
+    height: 450px;
+    width: 110%;
+    font-family: 'Biryani', sans-serif;
+}
+@media screen and (max-width: 768px){
+    .iframe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1100px;
+        width: 100%;
+        font-family: 'Biryani', sans-serif;
+    }
+    #msgform {
+        padding: 20px 0 0 0;
+    }
 }

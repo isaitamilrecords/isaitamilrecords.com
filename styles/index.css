@@ -727,3 +727,12 @@
     width: auto;
     border-radius: 15px;
 }
+
+.iframe {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 990px;
+    width: 100%;
+}

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style4.css">
+    <link rel="stylesheet" href="styles/index.css">
 
 </head>
 
@@ -64,54 +65,225 @@
             <div class="container-fluid">
                 <h1 class="heading">Contact Us</h1>
                 <hr class="headingline" />
-                <center class="p-4">
+                <div class="row">
+                    <div class="col-12 col-md-6" id="msgform">
+                        <form class="gform pure-form pure-form-stacked" method="POST"
+                            data-email="abishekmas0708@gmail.com"
+                            action="https://script.google.com/macros/s/AKfycbwH8USDwuOQSe07_Ts2eu-dkUYgb7DSjR6ceG_kb65MwdP7UcJthIIiRAE2ip7iiUQTeg/exec">
+                            <div class="form-elements">
+                                <div class="mlabels">Name</div>
+                                <input name="Name" type="text" required="" placeholder="Your Name" class="form-control"
+                                    id="namehere">
+                                <div class="warning" id="mnamelabel">Please enter your Name</div>
 
-                    <span class="detail maildetail buttondetail"><a href="mailto:isaitamilrecords@gmail.com"
-                            target="_blank" id="automail" target="_blank"><i id="cmail"
-                                class="fas fa-at"></i>isaitamilrecords@gmail.com</a></span>
-                    <div class="contacttext">Send us a mail. Our team will contact you within 24 hours!</div>
+                                <div class="mlabels">Mobile Number</div>
+                                <input name="Phone" type="tel" required="" placeholder="+91 00000 00000"
+                                    class="form-control" id="mmobile">
+                                <div class="warning" id="mmobilelabel">Please enter your Mobile Number</div>
+                                <div class="warning" id="mmobilewarning">Please enter a valid Mobile Number</div>
 
-                    <!-- <span class="detail phonedetail buttondetail"><a href="tel:+918270514004" id="autophone"><i
+                                <div class="mlabels">Email</div>
+                                <input name="Email" type="email" required="" placeholder="abcde@domin.com"
+                                    class="form-control" id="memail">
+                                <div class="warning" id="memaillabel">Please enter your Email</div>
+                                <div class="warning" id="memailwarning">Please enter a valid Email</div>
+
+                                <div class="mlabels">Message</div>
+                                <textarea name="Message" required="" placeholder="Write your message here..."
+                                    class="form-control" id="mmessage"></textarea>
+                                <div class="warning" id="mmessagelabel">Please enter your message</div>
+                                <br><br>
+
+                                <center>
+                                    <button class="btn btn-primary sendmsgbtn" id="" onclick="nameTex()">Send
+                                        Message</button>
+                                </center>
+                            </div>
+                            <!-- Thankyou_message --><br>
+                            <div class="thankyou_message" style="display:none;">
+                                <!-- -->
+                                <center>
+                                    <div class="thanks" style="padding: 0; width: 20rem;">
+                                        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_m3ixidnq.json"
+                                            background="transparent" speed="1" loop autoplay>
+                                        </lottie-player>
+                                    </div>
+                                </center>
+                                <h3>Thank You, <span id="nametext"></span>
+                                    <script>
+                                        function nameTex() {
+                                            var x = document.getElementById("namehere").value;
+                                            document.getElementById("nametext").innerHTML = x;
+                                        }
+                                    </script>
+                                    <br> Your form submitted succesfully.
+                                </h3>
+                                <br>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <center class="p-4">
+                            <span class="detail maildetail buttondetail"><a href="mailto:isaitamilrecords@gmail.com"
+                                    target="_blank" id="automail" target="_blank"><i id="cmail"
+                                        class="fas fa-at"></i>isaitamilrecords@gmail.com</a></span>
+                            <div class="contacttext">Send us a mail. Our team will contact you within 24 hours!</div>
+
+                            <!-- <span class="detail phonedetail buttondetail"><a href="tel:+918270514004" id="autophone"><i
                                 id="cphone" class="fas fa-phone-alt"></i>+91 82705 14004</a></span>
-                    <div class="contacttext">Give us a phone call. We'll respond within minutes!</div> -->
+                                <div class="contacttext">Give us a phone call. We'll respond within minutes!</div> -->
 
-                    <span class="detail whatsappdetail buttondetail"><a href="https://wa.me/+918270514004"
-                            target="_blank" id="autowhatsapp"><i id="cwhatsapp" class="fab fa-whatsapp"></i>+91 82705
-                            14004</a></span>
-                    <div class="contacttext">Text us in WhatsApp. We'll reach out to you immediately</div>
+                            <span class="detail whatsappdetail buttondetail"><a href="https://wa.me/+918270514004"
+                                    target="_blank" id="autowhatsapp"><i id="cwhatsapp" class="fab fa-whatsapp"></i>+91
+                                    82705
+                                    14004</a></span>
+                            <div class="contacttext">Text us in WhatsApp. We'll reach out to you immediately</div>
 
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSe2Z2B-4kaW33V8i0ETM-v1WzJQMNKr6qfN-Z5Ao2825qGI1A/viewform?embedded=true"
-                        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            <span class="detail">
+                                <a href="https://www.facebook.com/isaitamilrecords/" target="_blank"><span
+                                        id="cfacebook" class="fa fa-facebook-square"></span></a>
+                                <a href="https://twitter.com/IsaiTamilRecord" target="_blank"><span id="ctwitter"
+                                        class="fa fa-twitter"></span></a>
+                                <a href="https://www.instagram.com/isai_tamil_records/" target="_blank"><span
+                                        id="cinstagram" class="fab fa-instagram-square"></span></a>
+                                <a href="https://www.youtube.com/isaitamilrecords" target="_blank"><span id="cyoutube"
+                                        class="fa fa-youtube"></span></a>
+                                <a href="https://www.dailymotion.com/IsaiTamilRecords" target="_blank"><span
+                                        id="cdailymotion" href="https://www.dailymotion.com/IsaiTamilRecords"
+                                        class="fab fa-dailymotion"></span></a>
+                            </span>
+                            <div class="contacttext">Follow and Support us on social media</div>
+                            <!-- <hr class="division" /> -->
+                        </center>
+                    </div>
 
-                    <span class="detail">
-                        <a href="https://www.facebook.com/isaitamilrecords/" target="_blank"><span id="cfacebook"
-                                class="fa fa-facebook-square"></span></a>
-                        <a href="https://twitter.com/IsaiTamilRecord" target="_blank"><span id="ctwitter"
-                                class="fa fa-twitter"></span></a>
-                        <a href="https://www.instagram.com/isai_tamil_records/" target="_blank"><span id="cinstagram"
-                                class="fab fa-instagram-square"></span></a>
-                        <a href="https://www.youtube.com/isaitamilrecords" target="_blank"><span id="cyoutube"
-                                class="fa fa-youtube"></span></a>
-                        <a href="https://www.dailymotion.com/IsaiTamilRecords" target="_blank"><span id="cdailymotion"
-                                href="https://www.dailymotion.com/IsaiTamilRecords"
-                                class="fab fa-dailymotion"></span></a>
-                    </span>
-                    <div class="contacttext">Follow and Support us on social media</div>
-                    <hr class="division" />
+                </div>
+                <center>
                     <div class="contacttext">Website designed by <a class="credits"
                             href="https://www.instagram.com/frds_call_me_ak/" target="_blank"><span
-                                class="fab fa-instagram"><span id="insta"> &sol; frds_call_me_ak</span></span></a> and
+                                class="fab fa-instagram"><span id="insta"> &sol; frds_call_me_ak</span></span></a>
+                        and
                         <a class="credits" href="https://www.instagram.com/abishek_mahi" target="_blank"><span
-                                class="fab fa-instagram"><span id="insta"> &sol; abishek_mahi</span></span></a></div>
+                                class="fab fa-instagram"><span id="insta"> &sol; abishek_mahi</span></span></a>
+                    </div>
                 </center>
             </div>
-
         </div>
     </div>
 
 
     <!--Bootstrap JS and jQuery-->
+    <script data-cfasync="false" type="text/javascript">
+        (function () {
+            function validEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                return re.test(email);
+            }
+
+            function validateHuman(honeypot) {
+                if (honeypot) {
+                    console.log("Robot Detected!");
+                    return true;
+                } else {
+                    console.log("Welcome Human!");
+                }
+            }
+
+            function getFormData(form) {
+                var elements = form.elements;
+
+                var fields = Object.keys(elements).filter(function (k) {
+                    return (elements[k].name !== "honeypot");
+                }).map(function (k) {
+                    if (elements[k].name !== undefined) {
+                        return elements[k].name;
+                    } else if (elements[k].length > 0) {
+                        return elements[k].item(0).name;
+                    }
+                }).filter(function (item, pos, self) {
+                    return self.indexOf(item) == pos && item;
+                });
+
+                var formData = {};
+                fields.forEach(function (name) {
+                    var element = elements[name];
+                    formData[name] = element.value;
+                    if (element.length) {
+                        var data = [];
+                        for (var i = 0; i < element.length; i++) {
+                            var item = element.item(i);
+                            if (item.checked || item.selected) {
+                                data.push(item.value);
+                            }
+                        }
+                        formData[name] = data.join(', ');
+                    }
+                });
+
+                // add form-specific values into the data
+                formData.formDataNameOrder = JSON.stringify(fields);
+                formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+                formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+                console.log(formData);
+                return formData;
+            }
+
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                var form = event.target;
+                var data = getFormData(form);
+                if (data.email && !validEmail(data.email)) {
+                    var invalidEmail = form.querySelector(".email-invalid");
+                    if (invalidEmail) {
+                        invalidEmail.style.display = "block";
+                        return false;
+                    }
+                } else {
+                    disableAllButtons(form);
+                    var url = form.action;
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', url);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function () {
+                        console.log(xhr.status, xhr.statusText);
+                        console.log(xhr.responseText);
+                        var formElements = form.querySelector(".form-elements")
+                        if (formElements) {
+                            formElements.style.display = "none"; // hide form
+                        }
+                        var thankYouMessage = form.querySelector(".thankyou_message");
+                        if (thankYouMessage) {
+                            thankYouMessage.style.display = "block";
+                        }
+                        return;
+                    };
+                    var encoded = Object.keys(data).map(function (k) {
+                        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                    }).join('&');
+                    xhr.send(encoded);
+                }
+            }
+
+            function loaded() {
+                console.log("Contact form submission handler loaded successfully.");
+                var forms = document.querySelectorAll("form.gform");
+                for (var i = 0; i < forms.length; i++) {
+                    forms[i].addEventListener("submit", handleFormSubmit, false);
+                }
+            };
+            document.addEventListener("DOMContentLoaded", loaded, false);
+
+            function disableAllButtons(form) {
+                var buttons = form.querySelectorAll("#button");
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].disabled = true;
+                }
+            }
+        })();
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

@@ -35,7 +35,7 @@
         content="Isai Tamil Records - Indian Independent Record Label">
     <meta data-n-head="ssr" data-hid="twitter:site" name="twitter:site" content="@IsaiTamilRecord">
     <meta data-n-head="ssr" data-hid="twitter:creator" name="twitter:creator" content="@IsaiTamilRecord">
-    <link rel="canonical" href="https://isaitamilrecords.com"/>
+    <link rel="canonical" href="https://isaitamilrecords.com" />
     <!-- css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -489,7 +489,7 @@
 
                     </div>
                 </div>
-
+                <!-- video platforms -->
                 <h1 class="title">Get Your Videos On </h1>
                 <hr class="titleline" />
                 <div class="d-none d-md-block">
@@ -572,12 +572,12 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-5 cardh card  order-2 order-md-3">
+                        <!-- <div class="col-lg-3 col-5 cardh card  order-2 order-md-3">
                             <div class="d-flex h-100 ">
                                 <img class="img-thumbnail justify-content-center mx-auto" style="width: 80%"
                                     src="images/Companies/jio.png">
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -697,46 +697,74 @@
                         </div>
                     </div> -->
                 </div>
+            </div>
 
-                <!-- Message -->
-                <h1 class="title">Send us a Message</h1>
-                <hr class="titleline" />
+            <!-- Message -->
+            <h1 class="title">Send us a Message</h1>
+            <hr class="titleline" />
 
-                <div class="container-fluid" id="lastcontainer">
-                    <div class="row">
-                        <!-- <div class="col-12 col-md-6 order-2 order-md-1" id="msgform">
+            <div class="container-fluid" id="lastcontainer">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-2 order-md-1" id="msgform">
+                        <form class="gform pure-form pure-form-stacked" method="POST"
+                            data-email="isaitamilrecords@gmail.com"
+                            action="https://script.google.com/macros/s/AKfycbwH8USDwuOQSe07_Ts2eu-dkUYgb7DSjR6ceG_kb65MwdP7UcJthIIiRAE2ip7iiUQTeg/exec">
+                            <div class="form-elements">
+                                <div class="mlabels">Name</div>
+                                <input name="Name" type="text" required="" placeholder="Your Name" class="form-control"
+                                    id="mname">
+                                <div class="warning" id="mnamelabel">Please enter your Name</div>
 
-                            <div class="mlabels">Name</div>
-                            <input type="text" class="form-control" id="mname">
-                            <div class="warning" id="mnamelabel">Please enter your Name</div>
+                                <div class="mlabels">Mobile Number</div>
+                                <input name="Phone" type="tel" required="" placeholder="+91 00000 00000"
+                                    class="form-control" id="mmobile">
+                                <div class="warning" id="mmobilelabel">Please enter your Mobile Number</div>
+                                <div class="warning" id="mmobilewarning">Please enter a valid Mobile Number</div>
 
-                            <div class="mlabels">Mobile (with country code)</div>
-                            <input type="text" class="form-control" id="mmobile">
-                            <div class="warning" id="mmobilelabel">Please enter your Mobile Number</div>
-                            <div class="warning" id="mmobilewarning">Please enter a valid Mobile Number</div>
+                                <div class="mlabels">Email</div>
+                                <input name="Email" type="email" required="" placeholder="abcde@domin.com"
+                                    class="form-control" id="memail">
+                                <div class="warning" id="memaillabel">Please enter your Email</div>
+                                <div class="warning" id="memailwarning">Please enter a valid Email</div>
 
-                            <div class="mlabels">Email</div>
-                            <input type="email" class="form-control" id="memail">
-                            <div class="warning" id="memaillabel">Please enter your Email</div>
-                            <div class="warning" id="memailwarning">Please enter a valid Email</div>
+                                <div class="mlabels">Message</div>
+                                <textarea name="Message" required="" placeholder="Write your message here..."
+                                    class="form-control" id="mmessage"></textarea>
+                                <div class="warning" id="mmessagelabel">Please enter your message</div><br><br>
 
-                            <div class="mlabels">Message</div>
-                            <textarea class="form-control" id="mmessage"></textarea>
-                            <div class="warning" id="mmessagelabel">Please enter your message</div>
+                                <center>
+                                    <button class="btn btn-primary" onclick="nameText(),verifyMessage()"
+                                        id="sendmsgbtn">Send
+                                        Message</button>
+                                </center>
+                            </div>
+                            <!-- Thankyou_message --><br>
+                            <div class="thankyou_message" style="display:none;">
+                                <!-- -->
+                                <center>
+                                    <div class="thanks" style="padding: 0; width: 20rem;">
+                                        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_m3ixidnq.json"
+                                            background="transparent" speed="1" loop autoplay>
+                                        </lottie-player>
+                                    </div>
+                                </center>
+                                <h3>Thank You, <span id="indexname"></span>
+                                    <script>
+                                        function nameText() {
+                                            var x = document.getElementById("mname").value;
+                                            document.getElementById("indexname").innerHTML = x;
+                                        }
+                                    </script>
+                                    <br> Your form submitted succesfully.
+                                </h3>
+                                <br>
+                            </div>
 
-                            <center>
-                                <button class="btn btn-primary" onclick="verifyMessage()" id="sendmsgbtn">Send
-                                    Message</button>
-                            </center>
+                        </form>
+                    </div>
 
-                        </div> -->
-                        <iframe class="iframe col-12 col-md-6 order-2 order-md-1" id="msgform"
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSe2Z2B-4kaW33V8i0ETM-v1WzJQMNKr6qfN-Z5Ao2825qGI1A/viewform?embedded=true"
-                            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-                        <div class="col-12 col-md-6 order-1 order-md-2">
-                            <img src="/images/Message.gif" id="messageimg" />
-                        </div>
+                    <div class="col-12 col-md-6 order-1 order-md-2">
+                        <img src="/images/Message.gif" id="messageimg" />
                     </div>
                 </div>
             </div>
@@ -745,45 +773,48 @@
     </div>
 
     <!--Modal-->
-    <div class="floatover">
-        <div class="floatbox">
-            <div id="captchacross">
-                <i class="fas fa-times" id="floatcross" onclick="closefloat()"></i>
+    <!-- <div class="floatover">
+            <div class="floatbox">
+                <div id="captchacross">
+                    <i class="fas fa-times" id="floatcross" onclick="closefloat()"></i>
+                </div>
+
+                <h6 id="captchatext">Please confirm that you are a <br /><span>Passionate Person <i id="heart"
+                            class="fas fa-heart"></i></span> </h6>
+
+                <div class="flexcenter">
+                    <div class="g-recaptcha" data-sitekey="6Lew0MwZAAAAAEZHkfSb7_DFqqyIrxWGnlKuNqwG"></div>
+                </div>
+                <p id="cw">Please check this checkbox</p>
+
+
+                <div id="captchabutton" class="flexcenter">
+                    <button class="btn btn-primary" id="captchasubmit" onclick="submit()">Send Message</button>
+                </div>
             </div>
 
-            <h6 id="captchatext">Please confirm that you are a <br /><span>Passionate Person <i id="heart"
-                        class="fas fa-heart"></i></span> </h6>
 
-            <div class="flexcenter">
-                <div class="g-recaptcha" data-sitekey="6Lew0MwZAAAAAEZHkfSb7_DFqqyIrxWGnlKuNqwG"></div>
+            <div class="successbox">
+                <div id="successcrossdiv">
+                    <i class="fas fa-times" id="successcross" onclick="closesuccess()"></i>
+                </div>
+                <h4 class="tick">Message sent successfully! <i class="fas fa-check-circle"></i></h4>
+                <h6>Our team will contact you very soon</h6>
             </div>
-            <p id="cw">Please check this checkbox</p>
 
-
-            <div id="captchabutton" class="flexcenter">
-                <button class="btn btn-primary" id="captchasubmit" onclick="submit()">Send Message</button>
-            </div>
-        </div>
-
-
-        <div class="successbox">
-            <div id="successcrossdiv">
-                <i class="fas fa-times" id="successcross" onclick="closesuccess()"></i>
-            </div>
-            <h4 class="tick">Message sent successfully! <i class="fas fa-check-circle"></i></h4>
-            <h6>Our team will contact you very soon</h6>
-        </div>
-
-    </div>
+        </div> -->
 
 
     <div class="servicefloat" id="spotifyfloat">
         <div class="servicebox">
             <div class="servicecrossdiv"><i class="fas fa-times servicecross" onclick="closeservice()"></i></div>
             <div class="d-none d-md-inline">
-                <center><img class="mainlogo" loading="lazy" title="Spotify" src="/images/Apps/Spotify.png"></center>
-                <p class="text">Spotify is currently the largest purely music-streaming platform in the world, with over
-                    140 million active users per month enjoying a rich offering of popular playlists. Spotify has large
+                <center><img class="mainlogo" loading="lazy" title="Spotify" src="/images/Apps/Spotify.png">
+                </center>
+                <p class="text">Spotify is currently the largest purely music-streaming platform in the world, with
+                    over
+                    140 million active users per month enjoying a rich offering of popular playlists. Spotify has
+                    large
                     music catalog.<br />
                     <strong>Advantage:</strong> Your tracks join a catalogue of millions of songs, available for a
                     rapidly growing user
@@ -792,10 +823,13 @@
                 <div class="wikipedia"><img src="/images/Wikipedia.png" /></div>
             </div>
             <div class="d-inline d-md-none">
-                <center><img class="mainlogosm" loading="lazy" title="Spotify" src="/images/Apps/Spotify.png"></center>
-                <p class="textsm">Spotify is currently the largest purely music-streaming platform in the world, with
+                <center><img class="mainlogosm" loading="lazy" title="Spotify" src="/images/Apps/Spotify.png">
+                </center>
+                <p class="textsm">Spotify is currently the largest purely music-streaming platform in the world,
+                    with
                     over
-                    140 million active users per month enjoying a rich offering of popular playlists. Spotify has large
+                    140 million active users per month enjoying a rich offering of popular playlists. Spotify has
+                    large
                     music catalog.<br />
                     <strong>Advantage:</strong> Your tracks join a catalogue of millions of songs, available for a
                     rapidly growing user
@@ -812,16 +846,20 @@
             <div class="d-none d-md-inline">
                 <center><img class="mainlogo" loading="lazy" title="Jiosaavn" src="/images/Apps/Saavn.png"></center>
                 <p class="text">With over 241 million active users, iTunes is one of the most popular digital music
-                    stores in the world. By distributing your music on iTunes and Apple Music, you can make it easier
+                    stores in the world. By distributing your music on iTunes and Apple Music, you can make it
+                    easier
                     for fans to discover and play your music than ever before.<br />
                     <strong>Advantage:</strong> Local focus & reach. Known as “India’s Spotify”.<br />
                     <strong>Store Types:</strong> Streaming.</p>
                 <div class="wikipedia"><img src="/images/Wikipedia.png" /></div>
             </div>
             <div class="d-inline d-md-none">
-                <center><img class="mainlogosm" loading="lazy" title="Jiosaavn" src="/images/Apps/Saavn.png"></center>
-                <p class="textsm">With over 241 million active users, iTunes is one of the most popular digital music
-                    stores in the world. By distributing your music on iTunes and Apple Music, you can make it easier
+                <center><img class="mainlogosm" loading="lazy" title="Jiosaavn" src="/images/Apps/Saavn.png">
+                </center>
+                <p class="textsm">With over 241 million active users, iTunes is one of the most popular digital
+                    music
+                    stores in the world. By distributing your music on iTunes and Apple Music, you can make it
+                    easier
                     for fans to discover and play your music than ever before.<br />
                     <strong>Advantage:</strong> Local focus & reach. Known as “India’s Spotify”.<br />
                     <strong>Store Types:</strong> Streaming.</p>
@@ -834,9 +872,11 @@
         <div class="servicebox">
             <div class="servicecrossdiv"><i class="fas fa-times servicecross" onclick="closeservice()"></i></div>
             <div class="d-none d-md-inline">
-                <center><img class="mainlogo" loading="lazy" title="Apple Music" src="/images/Apps/Apple.png"></center>
+                <center><img class="mainlogo" loading="lazy" title="Apple Music" src="/images/Apps/Apple.png">
+                </center>
                 <p class="text">With over 241 million active users, iTunes is one of the most popular digital music
-                    stores in the world. By distributing your music on iTunes and Apple Music, you can make it easier
+                    stores in the world. By distributing your music on iTunes and Apple Music, you can make it
+                    easier
                     for fans to discover and play your music than ever before.<br />
                     <strong>Advantage:</strong> You can reach over a hundred million people.<br />
                     <strong>Store Types:</strong> Cloud, Downloads.
@@ -846,8 +886,10 @@
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" loading="lazy" title="Apple Music" src="/images/Apps/Apple.png">
                 </center>
-                <p class="textsm">With over 241 million active users, iTunes is one of the most popular digital music
-                    stores in the world. By distributing your music on iTunes and Apple Music, you can make it easier
+                <p class="textsm">With over 241 million active users, iTunes is one of the most popular digital
+                    music
+                    stores in the world. By distributing your music on iTunes and Apple Music, you can make it
+                    easier
                     for fans to discover and play your music than ever before.<br />
                     <strong>Advantage:</strong> You can reach over a hundred million people.<br />
                     <strong>Store Types:</strong> Cloud, Downloads.
@@ -862,8 +904,10 @@
         <div class="servicebox">
             <div class="servicecrossdiv"><i class="fas fa-times servicecross" onclick="closeservice()"></i></div>
             <div class="d-none d-md-inline">
-                <center><img class="mainlogo" loading="lazy" title="Facebook" src="/images/Apps/Facebook.png"></center>
-                <p class="text">The world's biggest social network is a hub for staying in touch, reaching out to people
+                <center><img class="mainlogo" loading="lazy" title="Facebook" src="/images/Apps/Facebook.png">
+                </center>
+                <p class="text">The world's biggest social network is a hub for staying in touch, reaching out to
+                    people
                     and most recently entertainment. Videos have blown up to YouTube levels on Facebook and we will
                     protect your music whenever it's used to ensure you get what you're entitled for your
                     creations.<br />
@@ -893,8 +937,10 @@
             <div class="servicecrossdiv"><i class="fas fa-times servicecross" onclick="closeservice()"></i></div>
             <div class="d-none d-md-inline">
                 <center><img class="mainlogo" src="/images/Apps/Gaana.png"></center>
-                <p class="text">Gaana is one of India’s most-downloaded music streaming and download apps, boasting over
-                    150 million monthly active users. The platform also has playlists, radio, a discovery portal, and a
+                <p class="text">Gaana is one of India’s most-downloaded music streaming and download apps, boasting
+                    over
+                    150 million monthly active users. The platform also has playlists, radio, a discovery portal,
+                    and a
                     widely-used voice assistant for multilingual searches.<br />
                     <strong>Advantage:</strong> Get discovered by fans in India’s rapidly growing digital music
                     market.<br />
@@ -904,9 +950,11 @@
             </div>
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" src="/images/Apps/Gaana.png"></center>
-                <p class="textsm">Gaana is one of India’s most-downloaded music streaming and download apps, boasting
+                <p class="textsm">Gaana is one of India’s most-downloaded music streaming and download apps,
+                    boasting
                     over
-                    150 million monthly active users. The platform also has playlists, radio, a discovery portal, and a
+                    150 million monthly active users. The platform also has playlists, radio, a discovery portal,
+                    and a
                     widely-used voice assistant for multilingual searches.<br />
                     <strong>Advantage:</strong> Get discovered by fans in India’s rapidly growing digital music
                     market.<br />
@@ -923,9 +971,12 @@
             <div class="d-none d-md-inline">
                 <center><img class="mainlogo" loading="lazy" title="Amazon Music" src="/images/Apps/Amazon.png">
                 </center>
-                <p class="text">The biggest retailer on planet earth also sells your music via downloads and streams in
-                    all major music markets. Your music will be eligible for streaming to Amazon Prime members, 90 days
-                    after your release date. You can even give your fans the option of buying your music on CD, directly
+                <p class="text">The biggest retailer on planet earth also sells your music via downloads and streams
+                    in
+                    all major music markets. Your music will be eligible for streaming to Amazon Prime members, 90
+                    days
+                    after your release date. You can even give your fans the option of buying your music on CD,
+                    directly
                     from Amazon.<br />
                     <strong>Advantage:</strong> You can reach over 80 million people.<br />
                     <strong>Store Types:</strong> Cloud, Downloads, Streaming
@@ -935,8 +986,10 @@
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" loading="lazy" title="Amazon Music" src="/images/Apps/Amazon.png">
                 </center>
-                <p class="textsm">The biggest retailer on planet earth also sells your music via downloads and streams
-                    in all major music markets. Your music will be eligible for streaming to Amazon Prime members, 90
+                <p class="textsm">The biggest retailer on planet earth also sells your music via downloads and
+                    streams
+                    in all major music markets. Your music will be eligible for streaming to Amazon Prime members,
+                    90
                     days after your release date. You can even give your fans the option of buying your music on CD,
                     directly from Amazon.<br />
                     <strong>Advantage:</strong> You can reach over 80 million people.<br />
@@ -954,8 +1007,10 @@
                 <center><img class="mainlogo" loading="lazy" title="Instagram" src="/images/Apps/Instagram.png">
                 </center>
                 <p class="text">Instagram has over one billion users worldwide. That’s a lot of potential reach for
-                    your music. When you distribute music to Instagram users will be able to search for and find your
-                    tracks in the platform's music library. Instagram story feature your music to reach millions of new
+                    your music. When you distribute music to Instagram users will be able to search for and find
+                    your
+                    tracks in the platform's music library. Instagram story feature your music to reach millions of
+                    new
                     listeners.<br />
                     <strong>Advantage:</strong> You can reach over billion listeners.<br />
                     <strong>Store Types:</strong> Streaming
@@ -965,9 +1020,12 @@
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" loading="lazy" title="Instagram" src="/images/Apps/Instagram.png">
                 </center>
-                <p class="textsm">Instagram has over one billion users worldwide. That’s a lot of potential reach for
-                    your music. When you distribute music to Instagram users will be able to search for and find your
-                    tracks in the platform's music library. Instagram story feature your music to reach millions of new
+                <p class="textsm">Instagram has over one billion users worldwide. That’s a lot of potential reach
+                    for
+                    your music. When you distribute music to Instagram users will be able to search for and find
+                    your
+                    tracks in the platform's music library. Instagram story feature your music to reach millions of
+                    new
                     listeners.<br />
                     <strong>Advantage:</strong> You can reach over billion listeners.<br />
                     <strong>Store Types:</strong> Streaming
@@ -981,9 +1039,12 @@
         <div class="servicebox">
             <div class="servicecrossdiv"><i class="fas fa-times servicecross" onclick="closeservice()"></i></div>
             <div class="d-none d-md-inline">
-                <center><img class="mainlogo" loading="lazy" title="Wynk Music" src="/images/Apps/Wync.png"></center>
-                <p class="text">Wynk is one of India’s most-downloaded music apps, with over 100 million installs and
-                    over 1.5 billion monthly streams. Wynk gives the opportunity to share music with friends on the app
+                <center><img class="mainlogo" loading="lazy" title="Wynk Music" src="/images/Apps/Wync.png">
+                </center>
+                <p class="text">Wynk is one of India’s most-downloaded music apps, with over 100 million installs
+                    and
+                    over 1.5 billion monthly streams. Wynk gives the opportunity to share music with friends on the
+                    app
                     regardless of connectivity.</br>
                     <strong>Advantage:</strong> Get your music in front of listeners across India, Sri Lanka, and
                     more countries.</br>
@@ -991,9 +1052,12 @@
                 <div class="wikipedia"><img src="/images/Wikipedia.png" /></div>
             </div>
             <div class="d-inline d-md-none">
-                <center><img class="mainlogosm" loading="lazy" title="Wynk Music" src="/images/Apps/Wync.png"></center>
-                <p class="textsm">Wynk is one of India’s most-downloaded music apps, with over 100 million installs and
-                    over 1.5 billion monthly streams. Wynk gives the opportunity to share music with friends on the app
+                <center><img class="mainlogosm" loading="lazy" title="Wynk Music" src="/images/Apps/Wync.png">
+                </center>
+                <p class="textsm">Wynk is one of India’s most-downloaded music apps, with over 100 million installs
+                    and
+                    over 1.5 billion monthly streams. Wynk gives the opportunity to share music with friends on the
+                    app
                     regardless of connectivity.</br>
                     <strong>Advantage:</strong> Get your music in front of listeners across India, Sri Lanka, and
                     more countries.</br>
@@ -1009,9 +1073,11 @@
             <div class="d-none d-md-inline">
                 <center><img class="mainlogo" src="/images/Apps/Hungama.png"></center>
                 <p class="text">Hungama Digital Media is a company headquartered in Mumbai. The company was first
-                    launched in 1999 by Ashish Kacholia, Hiren Ved, Lashit Sanghvi, Rakesh Jhunjhunwala, and Neeraj Roy
+                    launched in 1999 by Ashish Kacholia, Hiren Ved, Lashit Sanghvi, Rakesh Jhunjhunwala, and Neeraj
+                    Roy
                     as an online promotions agency. The company has since
-                    grown to where they also serve as an aggregator, developer, publisher, and distributor of Bollywood
+                    grown to where they also serve as an aggregator, developer, publisher, and distributor of
+                    Bollywood
                     and Asian entertainment.<br />
                     <strong>Advantage:</strong> Make your music available across India.<br />
                     <strong>Store Types:</strong> Streaming
@@ -1021,9 +1087,11 @@
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" src="/images/Apps/Hungama.png"></center>
                 <p class="textsm">Hungama Digital Media is a company headquartered in Mumbai. The company was first
-                    launched in 1999 by Ashish Kacholia, Hiren Ved, Lashit Sanghvi, Rakesh Jhunjhunwala, and Neeraj Roy
+                    launched in 1999 by Ashish Kacholia, Hiren Ved, Lashit Sanghvi, Rakesh Jhunjhunwala, and Neeraj
+                    Roy
                     as an online promotions agency. The company has since
-                    grown to where they also serve as an aggregator, developer, publisher, and distributor of Bollywood
+                    grown to where they also serve as an aggregator, developer, publisher, and distributor of
+                    Bollywood
                     and Asian entertainment.<br />
                     <strong>Advantage:</strong> Make your music available across India.<br />
                     <strong>Store Types:</strong> Streaming
@@ -1048,7 +1116,8 @@
             </div>
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" src="/images/Apps/Youtube Music.png"></center>
-                <p class="textsm">Over 1 billion music fans use to YouTube Music every month to uncover new music and
+                <p class="textsm">Over 1 billion music fans use to YouTube Music every month to uncover new music
+                    and
                     discover the latest artists. Upload your music to YouTube Music to make sure it's available to
                     potential listeners across the globe and make money whenever it's played.<br />
                     <strong>Advantage:</strong> You can reach over 100 million people.<br />
@@ -1065,7 +1134,8 @@
             <div class="d-none d-md-inline">
                 <center><img class="mainlogo" src="/images/Apps/Resso.png"></center>
                 <p class="text">TikTok's parent company ByteDance has launched Resso, social music streaming app in
-                    India. Resso is not new and it appeared in the form of beta on Google Play Store and Apple App Store
+                    India. Resso is not new and it appeared in the form of beta on Google Play Store and Apple App
+                    Store
                     in late November 2019. Resso already gained more than 10 million users. It also offers the
                     synchronised lyrics.<br />
                     <strong>Advantage:</strong> You can reach over 10 million people.<br />
@@ -1075,8 +1145,10 @@
             </div>
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" src="/images/Apps/Resso.png"></center>
-                <p class="textsm">TikTok's parent company ByteDance has launched Resso, social music streaming app in
-                    India. Resso is not new and it appeared in the form of beta on Google Play Store and Apple App Store
+                <p class="textsm">TikTok's parent company ByteDance has launched Resso, social music streaming app
+                    in
+                    India. Resso is not new and it appeared in the form of beta on Google Play Store and Apple App
+                    Store
                     in late November 2019. Resso already gained more than 10 million users. It also offers the
                     synchronised lyrics.<br />
                     <strong>Advantage:</strong> You can reach over 10 million people.<br />
@@ -1101,7 +1173,8 @@
             </div>
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" src="/images/Apps/Shazam.png"></center>
-                <p class="textsm">A popular tool for identifying unfamiliar songs anywhere and everywhere. The social
+                <p class="textsm">A popular tool for identifying unfamiliar songs anywhere and everywhere. The
+                    social
                     aspect of the service lets you discover, explore, buy and share the music you find.<br />
                     <strong>Advantage:</strong> Shazam generates over $300 million in digital sales..<br />
                     <strong>Store Types:</strong> Song Discovery
@@ -1142,7 +1215,8 @@
             <div class="servicecrossdiv"><i class="fas fa-times servicecross" onclick="closeservice()"></i></div>
             <div class="d-none d-md-inline">
                 <center><img class="mainlogo" src="/images/Apps/Deezer.png" style="height:60px;"></center>
-                <p class="text">Deezer is a French online music streaming service. Available in more countries than any
+                <p class="text">Deezer is a French online music streaming service. Available in more countries than
+                    any
                     other streaming music service, Deezer gets your music in front of 20 million users.</br>
                     <strong>Advantage:</strong> Reach. Go global with your music.</br>
                     <strong>Store Types:</strong> Downloads, Streaming.</p>
@@ -1150,7 +1224,8 @@
             </div>
             <div class="d-inline d-md-none">
                 <center><img class="mainlogosm" src="/images/Apps/Deezer.png" style="height:40px;" /></center>
-                <p class="textsm">Deezer is a French online music streaming service. Available in more countries than
+                <p class="textsm">Deezer is a French online music streaming service. Available in more countries
+                    than
                     any
                     other streaming music service, Deezer gets your music in front of 20 million users. <br>
                     <strong>Advantage:</strong> Reach. Go global with your music. <br>
@@ -1165,10 +1240,14 @@
             <div class="servicecrossdiv"><i class="fas fa-times servicecross" onclick="closeservice()"></i></div>
             <div class="d-none d-md-inline">
                 <center><img class="mainlogo" src="/images/Apps/Napster.png" style="height:60px;"></center>
-                <p class="text">Napster (formerly Rhapsody) is the original streaming music service. It boasts a catalog
-                    of over 42 million songs (and growing) and over three million paying subscribers worldwide. Napster
-                    is also partnered with iHeartRadio to offer users the interactive streaming service iHeartRadio All
-                    Access. You must distribute to both Napster and iHeartRadio to be on iHeartRadio All Access.</br>
+                <p class="text">Napster (formerly Rhapsody) is the original streaming music service. It boasts a
+                    catalog
+                    of over 42 million songs (and growing) and over three million paying subscribers worldwide.
+                    Napster
+                    is also partnered with iHeartRadio to offer users the interactive streaming service iHeartRadio
+                    All
+                    Access. You must distribute to both Napster and iHeartRadio to be on iHeartRadio All
+                    Access.</br>
                     <strong>Advantage:</strong> Napster is pure music brand and it is not just in the game to sell
                     devices. </br>
                     <strong>Store Types:</strong> Downloads, Streaming</p>
@@ -1178,9 +1257,12 @@
                 <center><img class="mainlogosm" src="/images/Apps/Napster.png" style="height:40px;"></center>
                 <p class="textsm">Napster (formerly Rhapsody) is the original streaming music service. It boasts a
                     catalog
-                    of over 42 million songs (and growing) and over three million paying subscribers worldwide. Napster
-                    is also partnered with iHeartRadio to offer users the interactive streaming service iHeartRadio All
-                    Access. You must distribute to both Napster and iHeartRadio to be on iHeartRadio All Access. <br>
+                    of over 42 million songs (and growing) and over three million paying subscribers worldwide.
+                    Napster
+                    is also partnered with iHeartRadio to offer users the interactive streaming service iHeartRadio
+                    All
+                    Access. You must distribute to both Napster and iHeartRadio to be on iHeartRadio All Access.
+                    <br>
                     <strong>Advantage:</strong> Napster is pure music brand and it is not just in the game to sell
                     devices. <br>
                     <strong>Store Types:</strong> Downloads, Streaming</p>
@@ -1254,13 +1336,15 @@
                         <div class="row">
                             <div class="col-12">
                                 <span class="head">Contact Us:<br /></span>
-                                <div class="contactinfo"><i id="mail" class="fas fa-at"></i> isaitamilrecords@gmail.com
+                                <div class="contactinfo"><i id="mail" class="fas fa-at"></i>
+                                    isaitamilrecords@gmail.com
                                     <br />
                                 </div>
                                 <!-- <div class="contactinfo"><i id="phone" class="fas fa-phone-alt"></i>+91 82705 14004
                                     <br />
                                 </div> -->
-                                <div class="contactinfo"><i id="whatsapp" class="fab fa-whatsapp"></i>+91 82705 14004
+                                <div class="contactinfo"><i id="whatsapp" class="fab fa-whatsapp"></i>+91 82705
+                                    14004
                                     <br />
                                 </div>
                             </div>
@@ -1327,8 +1411,118 @@
         </div>
     </div>
     <!-- Script -->
+    <script data-cfasync="false" type="text/javascript">
+        (function () {
+            function validEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                return re.test(email);
+            }
+
+            function validateHuman(honeypot) {
+                if (honeypot) {
+                    console.log("Robot Detected!");
+                    return true;
+                } else {
+                    console.log("Welcome Human!");
+                }
+            }
+
+            function getFormData(form) {
+                var elements = form.elements;
+
+                var fields = Object.keys(elements).filter(function (k) {
+                    return (elements[k].name !== "honeypot");
+                }).map(function (k) {
+                    if (elements[k].name !== undefined) {
+                        return elements[k].name;
+                    } else if (elements[k].length > 0) {
+                        return elements[k].item(0).name;
+                    }
+                }).filter(function (item, pos, self) {
+                    return self.indexOf(item) == pos && item;
+                });
+
+                var formData = {};
+                fields.forEach(function (name) {
+                    var element = elements[name];
+                    formData[name] = element.value;
+                    if (element.length) {
+                        var data = [];
+                        for (var i = 0; i < element.length; i++) {
+                            var item = element.item(i);
+                            if (item.checked || item.selected) {
+                                data.push(item.value);
+                            }
+                        }
+                        formData[name] = data.join(', ');
+                    }
+                });
+
+                // add form-specific values into the data
+                formData.formDataNameOrder = JSON.stringify(fields);
+                formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+                formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+                console.log(formData);
+                return formData;
+            }
+
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                var form = event.target;
+                var data = getFormData(form);
+                if (data.email && !validEmail(data.email)) {
+                    var invalidEmail = form.querySelector(".email-invalid");
+                    if (invalidEmail) {
+                        invalidEmail.style.display = "block";
+                        return false;
+                    }
+                } else {
+                    disableAllButtons(form);
+                    var url = form.action;
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', url);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function () {
+                        console.log(xhr.status, xhr.statusText);
+                        console.log(xhr.responseText);
+                        var formElements = form.querySelector(".form-elements")
+                        if (formElements) {
+                            formElements.style.display = "none"; // hide form
+                        }
+                        var thankYouMessage = form.querySelector(".thankyou_message");
+                        if (thankYouMessage) {
+                            thankYouMessage.style.display = "block";
+                        }
+                        return;
+                    };
+                    var encoded = Object.keys(data).map(function (k) {
+                        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                    }).join('&');
+                    xhr.send(encoded);
+                }
+            }
+
+            function loaded() {
+                console.log("Contact form submission handler loaded successfully.");
+                var forms = document.querySelectorAll("form.gform");
+                for (var i = 0; i < forms.length; i++) {
+                    forms[i].addEventListener("submit", handleFormSubmit, false);
+                }
+            };
+            document.addEventListener("DOMContentLoaded", loaded, false);
+
+            function disableAllButtons(form) {
+                var buttons = form.querySelectorAll("#sendmsgbtn");
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].disabled = true;
+                }
+            }
+        })();
+    </script>
     <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="scripts/recaptcha.js"></script>
     <script src="scripts/smtp.js"></script>
     <script src="scripts/showfloats.js"></script>

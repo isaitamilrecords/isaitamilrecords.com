@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error</title>
+    <link rel="icon" href="images/Icon.png">
+    <meta name="theme-color" content="#ca2020">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .logoimg {
+            height: 5rem;
+            margin-top: 4rem;
+            margin-bottom: -5rem;
+        }
+
+        .navbtn {
+            /* margin-right: 1rem !important; */
+            color: #fff !important;
+            border: transparent !important;
+            /* background: linear-gradient(42deg, #FE8081 0%, #8180FE 100%) !important; */
+            background: #e94848 !important;
+            border-width: 2.5px !important;
+            border-radius: 50px !important;
+            font-family: 'Lato', sans-serif !important;
+            letter-spacing: 1px;
+            font-size: 18px !important;
+            font-weight: 600 !important;
+            padding: 10px 20px !important;
+            transition: all 0.3s !important;
+        }
+
+        .navbtn:hover {
+            transform: scale(1.05);
+        }
+
+        .fa-arrow-left {
+            margin-right: 8px;
+        }
+
+        .error-lottie {
+            width: 85%;
+        }
+
+        @media only screen and (max-width: 820px) {
+            body {
+                padding: 10vh 0;
+            }
+
+            center {
+                height: 70vh;
+            }
+
+            .error-lottie {
+                width: 100%;
+            }
+
+            .logoimg {
+                width: 7rem;
+                margin-top: 4rem;
+                margin-bottom: -5rem;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <center>
+        <img class="logoimg" src="images/Light.png" alt="Isai Tamil Record Logo">
+        <lottie-player class="error-lottie" src="https://assets6.lottiefiles.com/packages/lf20_aaesnvcw.json"
+            background="transparent" speed=".5" loop autoplay>
+        </lottie-player>
+        <a class="btn navbtn" href="index.html"><i class="fas fa-arrow-left"></i> Back To Home</a>
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>

@@ -3,42 +3,42 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>http://isaitamilrecords.com/</loc>
+    <loc>https://isaitamilrecords.com/</loc>
     <lastmod>2022-07-06T17:00:45+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>http://isaitamilrecords.com/index.html</loc>
+    <loc>https://isaitamilrecords.com/index.html</loc>
     <lastmod>2022-07-06T17:00:45+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://isaitamilrecords.com/aboutus.html</loc>
+    <loc>https://isaitamilrecords.com/aboutus.html</loc>
     <lastmod>2022-07-06T17:00:44+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://isaitamilrecords.com/music.html</loc>
+    <loc>https://isaitamilrecords.com/music.html</loc>
     <lastmod>2022-07-06T17:00:45+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://isaitamilrecords.com/videos.html</loc>
+    <loc>https://isaitamilrecords.com/videos.html</loc>
     <lastmod>2022-07-06T17:00:45+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://isaitamilrecords.com/contact.html</loc>
+    <loc>https://isaitamilrecords.com/contact.html</loc>
     <lastmod>2022-07-06T17:00:44+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://isaitamilrecords.com/artist/Abishek-Mahi.html</loc>
+    <loc>https://isaitamilrecords.com/artist/Abishek-Mahi.html</loc>
     <lastmod>2022-07-06T17:00:44+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>http://isaitamilrecords.com/artist/Sibi-Chakravarthi.html</loc>
+    <loc>https://isaitamilrecords.com/artist/Sibi-Chakravarthi.html</loc>
     <lastmod>2022-07-06T17:00:44+00:00</lastmod>
     <priority>0.64</priority>
   </url>

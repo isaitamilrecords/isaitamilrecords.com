@@ -1,5 +1,4 @@
-User Agent: *
-Allow: /music.html
-Allow: /aboutus.html
-Allow: /videos.html
-Allow: /contact.html
+Sitemap: https://isaitamilrecords.com/sitemap.xml
+
+User-agent: *
+Allow: /

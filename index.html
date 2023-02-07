@@ -1505,6 +1505,11 @@
             </div>
         </div>
         <!-- Script -->
+        <script>
+            if (window.location.protocol != "https:") {
+                window.location.protocol = "https:";
+            }
+        </script>
         <script data-cfasync="false" type="text/javascript">
             (function () {
                 function validEmail(email) {

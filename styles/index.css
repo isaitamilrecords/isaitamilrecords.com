@@ -447,7 +447,7 @@
 
     .vid-col {
         padding: 0;
-        height: 300px;
+        height: 250px;
         margin: 3% 0 1%;
         overflow: hidden;
         text-align: center;
@@ -459,7 +459,7 @@
         border: none;
         position: relative;
         /* margin:0 10%; */
-        width: 90%;
+        /* width: 90%; */
         height: 215px;
         border-radius: 10px;
         justify-content: center;

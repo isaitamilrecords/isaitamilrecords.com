@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monetunes x Lynkify Iframe Integration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0C0A09 0%, #1B1918 100%);
+            min-height: 100vh;
+            color: #F9F9F9;
+        }
+        
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: rgba(27, 25, 24, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(225, 29, 72, 0.2);
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #F9F9F9 0%, #E11D48 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+        
+        .iframe-container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .screen-size {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .screen-label {
+            background: rgba(225, 29, 72, 0.1);
+            color: #E11D48;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border: 1px solid rgba(225, 29, 72, 0.3);
+        }
+        
+        .iframe-wrapper {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(225, 29, 72, 0.2);
+            position: relative;
+        }
+        
+        /* Desktop Iframe */
+        .desktop-iframe {
+            width: 1200px;
+            height: 800px;
+        }
+        
+        /* Tablet Iframe */
+        .tablet-iframe {
+            width: 768px;
+            height: 600px;
+        }
+        
+        /* Mobile Iframe */
+        .mobile-iframe {
+            width: 375px;
+            height: 500px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        
+        .footer {
+            background: rgba(27, 25, 24, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid rgba(225, 29, 72, 0.2);
+        }
+        
+        .footer p {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: #E11D48;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .footer a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1300px) {
+            .iframe-container {
+                gap: 25px;
+                padding: 15px;
+            }
+            
+            .desktop-iframe {
+                width: 100%;
+                max-width: 1000px;
+                height: 70vh;
+                min-height: 600px;
+            }
+            
+            .tablet-iframe {
+                width: 100%;
+                max-width: 600px;
+                height: 60vh;
+                min-height: 500px;
+            }
+            
+            .mobile-iframe {
+                width: 100%;
+                max-width: 350px;
+                height: 50vh;
+                min-height: 400px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .header p {
+                font-size: 0.9rem;
+            }
+            
+            .iframe-container {
+                gap: 20px;
+                padding: 10px;
+            }
+            
+            .screen-label {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+            
+            .desktop-iframe {
+                width: 100%;
+                max-width: 100%;
+                height: 50vh;
+                min-height: 400px;
+            }
+            
+            .tablet-iframe {
+                width: 100%;
+                max-width: 100%;
+                height: 45vh;
+                min-height: 350px;
+            }
+            
+            .mobile-iframe {
+                width: 100%;
+                max-width: 100%;
+                height: 40vh;
+                min-height: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.25rem;
+            }
+            
+            .iframe-container {
+                padding: 5px;
+                gap: 15px;
+            }
+            
+            .screen-label {
+                font-size: 0.75rem;
+                padding: 4px 8px;
+            }
+            
+            .desktop-iframe,
+            .tablet-iframe,
+            .mobile-iframe {
+                width: 100%;
+                max-width: 100%;
+                height: 35vh;
+                min-height: 250px;
+                border-radius: 6px;
+            }
+        }
+        
+        @media (min-width: 1400px) {
+            .iframe-container {
+                gap: 40px;
+                padding: 30px;
+            }
+            
+            .desktop-iframe {
+                width: 1400px;
+                height: 900px;
+            }
+            
+            .tablet-iframe {
+                width: 900px;
+                height: 700px;
+            }
+            
+            .mobile-iframe {
+                width: 400px;
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Monetunes x Lynkify Integration</h1>
+            <p>Smart Link Creator - Professional Music Distribution</p>
+        </div>
+        
+        <div class="iframe-container">
+            <!-- Desktop View -->
+            <div class="screen-size desktop">
+                <div class="screen-label">Desktop (1920px+)</div>
+                <div class="iframe-wrapper desktop-iframe">
+                    <iframe 
+                        src="https://lynkify.in/partner/monetunes"
+                        title="Monetunes x Lynkify Smart Link Creator - Desktop"
+                        allow="clipboard-write"
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Tablet View -->
+            <div class="screen-size tablet">
+                <div class="screen-label">Tablet (768px - 1023px)</div>
+                <div class="iframe-wrapper tablet-iframe">
+                    <iframe 
+                        src="https://lynkify.in/partner/monetunes"
+                        title="Monetunes x Lynkify Smart Link Creator - Tablet"
+                        allow="clipboard-write"
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Mobile View -->
+            <div class="screen-size mobile">
+                <div class="screen-label">Mobile (320px - 767px)</div>
+                <div class="iframe-wrapper mobile-iframe">
+                    <iframe 
+                        src="https://lynkify.in/partner/monetunes"
+                        title="Monetunes x Lynkify Smart Link Creator - Mobile"
+                        allow="clipboard-write"
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Powered by <a href="https://lynkify.in" target="_blank">Lynkify</a> • Partner: <a href="https://monetunes.com" target="_blank">Monetunes</a></p>
+        </div>
+    </div>
+</body>
+</html>
